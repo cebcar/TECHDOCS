@@ -58,7 +58,8 @@ pbcopy < ~/.ssh/id_ed25519.pub
 ### Create New Repository
 GitHub : ‘cebcar’ : New
 - supply repo Name and Description
-- make repository “Public”<br><br>
+- make repository “Public”
+- add license, normally MIT <br><br>
 
 ## Repo Settings
 *Settings Icon at right of project's menu bar*
@@ -85,7 +86,7 @@ We want to see the branch organization in the commit history.
   [-] Allow squash merging
   [-] Allow rebase merging (by definition, forces a single line of development with no branch organization)
 
-  [+] Always suggest updating pull request branches
+  [+] Always suggest updatinßg pull request branches
   [+] Automatically delete head branches.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*branches can still be restored* 
 
@@ -106,59 +107,15 @@ git remote add origin git@github.com:cebcar/NAME.git
 git push --set-upstream origin main
 ```
 
-## Repo Settings
-*Settings Icon at right of project's menu bar*
-- [ ] establish Repo Settings
 
-### > General
+- .gitignore
+  - do not ignore .gitignore
+    > !.gitignore
+  - ignore folder .cebcar
+    > .cebcar
+  - [.gitignore](https://cebcar.w3spaces.com/TechDocs/tools/Git.md#gitignore): add content for macOS
 
-### Features
-  [-] Wikis; *expect editing from within wiki*
-  [+] Issues
-  [-] Sponsorships
-  [-] Preserve this repository; *intended for long-term preservation of shared open-source code*
-  [o] Discussions; *depending on whether there are collaborators*
-  [+] Projects
-
-### Pull Requests
-#### Context:
-According to [W3Docs: How to rebase a git branch](https://www.w3docs.com/snippets/git/how-to-rebase-git-branch.html)
-> Merging preserves history whereas rebasing rewrites it.
-
-We want to see the branch organization in the commit history.
-
-#### Merge:
-  [+] Allow merge commits
-  [-] Allow squash merging
-  [-] Allow rebase merging (by definition, forces a single line of development with no branch organization
-
-  [+] Always suggest updating pull request branches
-  [+] Automatically delete head branches.
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*branches can still be restored* 
-
-## > Branches
-Default Branch: main
-
-## Attach Local Repo
-
-create directory ~/NAME
-```shell
-cd ~/NAME
-git init
-cp ~/LICENSE ~/NAME/LICENSE # MIT license with updated copyright holder
-git add .
-git commit -m "initial commit"
-git branch -M main
-git remote add origin git@github.com:cebcar/NAME.git
-git push --set-upstream origin main
-```
-
-## > .gitignore
-- do not ignore .gitignore
-  >!.gitignore
-- ignore folder .cebcar
-  > .cebcar
-- [.gitignore](https://cebcar.w3spaces.com/TechDocs/tools/Git.md#gitignore): add content for macOS
+- README.md: check header
 
 ## > Milestones
 
@@ -168,7 +125,8 @@ git push --set-upstream origin main
 ### filter by milestone
 `milestone:`&lt;name&gt;
 
-##OAuth Tokens
+### OAuth Tokens for GitHub
+- OAuth Tokens
 *from [Access Tokens @ oauth.com](https://www.oauth.com/oauth2-servers/access-tokens/)*
 ``` text
 Access tokens are the thing that applications use to make API requests on behalf of a user.
@@ -196,4 +154,31 @@ Access tokens must be kept confidential in transit and in storage.
     - set [Personal Access Token Permissions](#personal-access-token-permissions)
     - Generate New Token
 
-button onclick="window.print()">Print Button</button>
+### Tasks
+#### Access GitHub Repository Settings
+- from repo button bar: 'Settings'
+
+#### Access GitHub Developer Settings
+- from Developer avatar at top right of any GitHub screen: Settings > Developer settings
+
+### Issues
+- reference an issue from a commit without closing, ...: #issuenbr
+
+- Delete an Issue
+  - ***Warning***: the only reason we now know for deleting a GitHub issue is to remove an unwanted issue from a ZenHub Roadmap
+
+  - reference: [ZenHub: Deleting GitHub Issues or ZenHub Epics](https://help.zenhub.com/support/solutions/articles/43000480335-deleting-github-issues-or-zenhub-epics)
+
+  - from GitHub
+    - to enable/disable issue deletion:
+      - under personal icon at far top right
+        - select 'Your Organizations' and switch to cebcar account
+      - left sidebar: select Member Privileges
+      - toggle "Allow members to delete issues for this organization"
+    - so:
+      - enable issue deletion
+      - display the issue's screen
+      - select trashcan next to "Delete Issue", near bottom of left panel
+      - disable issue deletion
+
+<button onclick="window.print()">Print Button</button>
