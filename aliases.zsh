@@ -6,3 +6,4 @@ alias gsb='autoload -U colors && colors;echo "$fg[yellow]\033[1m";pwd;echo "$res
 alias glgr='git log --oneline --graph'
 alias glog='git log --oneline --graph -6'
 alias ldt='git log --graph --decorate -30 --all --date-order --date=format:"%Y-%m-%d %H:%M:%S" --pretty=format:"%C(cyan)%h%Creset %C(black bold)%ad%Creset%C(auto)%d %s"'
+alias hsh='git rev-parse --verify'
