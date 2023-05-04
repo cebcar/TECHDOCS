@@ -56,7 +56,7 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - verify: additional known_host at ~/.ssh
 
 ### Create New Repository
-GitHub : ‘cebcar’ : New
+GitHub : ‘cebcar’ : New Repository
 - supply repo Name and Description
 - make repository “Public”
 - add license, normally MIT <br><br>
@@ -115,7 +115,24 @@ git push --set-upstream origin main
     > .cebcar
   - [.gitignore](https://cebcar.w3spaces.com/TechDocs/tools/Git.md#gitignore): add content for macOS
 
-- README.md: check header
+- .gitconfig
+TODO: correct configuration is to have exactly one of these at ~
+*required to connect to GitHub*
+```
+[user]
+	name = Carol Clark
+	email = 3742721+carolclark@users.noreply.github.com
+[init]
+	defaultBranch = main
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[pull]
+	rebase = false
+[difftool]
+	prompt = true
+```
 
 ## > Milestones
 
@@ -127,6 +144,8 @@ git push --set-upstream origin main
 
 ### OAuth Tokens for GitHub
 - OAuth Tokens
+### OAuth Tokens
+
 *from [Access Tokens @ oauth.com](https://www.oauth.com/oauth2-servers/access-tokens/)*
 ``` text
 Access tokens are the thing that applications use to make API requests on behalf of a user.
