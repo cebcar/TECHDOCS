@@ -33,7 +33,7 @@ generates
 ##### Inspections
 - [x] Unresolved file references; Warning
 
-##### Live Templates (JetBrains - obsolete)
+##### Live Templates (for JetBrains - obsolete)
 ##### cd.tool
 - tool document with profile
   - with $INDENT$=(non-breaking space)x8
