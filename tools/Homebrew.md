@@ -1,6 +1,7 @@
 # Homebrew
 [Homebrew Tool Profile](#homebrew-profile)<br/>
 *The Missing Package Manager for macOS (or Linux)*<br/>
+TODO: plan to support scripted reinstallation of our development environment (dotfiles?)
 
 We use Homebrew to install software on macOS.
 
