@@ -1,5 +1,5 @@
-#Bat
-*clone of cat(1) with syntax highlighting and Git integration"
+# bat
+*clone of cat(1) with syntax highlighting and Git integration*
 
 ## MANPAGER
 - adds improved manpage display
