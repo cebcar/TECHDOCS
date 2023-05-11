@@ -29,11 +29,10 @@ generates
 - *indentation 2 for html, markdown*
   - HTML: Tab Size 2; Indent 2; Continuation Indent 4
   - Markdown: set from HTML
-
 ##### Inspections
-- [x] Unresolved file references; Warning
+- Unresolved file references; Warning
 
-##### Live Templates (for JetBrains - obsolete)
+##### Live Templates (syntax was for JetBrains - obsolete)
 ##### cd.tool
 - tool document with profile
   - with $INDENT$=(non-breaking space)x8
