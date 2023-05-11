@@ -1,0 +1,13 @@
+[user]
+	name = Carol Clark
+	email = 3742721+carolclark@users.noreply.github.com
+[init]
+	defaultBranch = main
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[pull]
+	rebase = false
+[difftool]
+	prompt = true
