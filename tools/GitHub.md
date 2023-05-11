@@ -64,7 +64,11 @@ GitHub : ‘cebcar’ : New Repository
 ## Repo Settings
 *Settings Icon at right of project's menu bar*
 
-### > General
+- merge
+  - [+] Allow  commits
+  - [-] Allow squash merging
+  - [-] Allow rebase merging <br><br>
+
 
 ### Features
   [-] Wikis; *expect editing from within wiki; not version controlled*
@@ -142,10 +146,7 @@ TODO: correct configuration is to have exactly one of these at ~
 ### filter by milestone
 `milestone:`&lt;name&gt;
 
-### OAuth Tokens for GitHub
-- OAuth Tokens
 ### OAuth Tokens
-
 *from [Access Tokens @ oauth.com](https://www.oauth.com/oauth2-servers/access-tokens/)*
 ``` text
 Access tokens are the thing that applications use to make API requests on behalf of a user.
@@ -153,6 +154,8 @@ The access token represents the authorization of a specific application to acces
 
 Access tokens must be kept confidential in transit and in storage.
 ```
+
+### OAuth Tokens for GitHub
 
 - GitHub Personal Access Tokens
   - type of OAuth token for GitHub
