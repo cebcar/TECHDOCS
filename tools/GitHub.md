@@ -64,12 +64,6 @@ GitHub : ‘cebcar’ : New Repository
 ## Repo Settings
 *Settings Icon at right of project's menu bar*
 
-- merge
-  - [+] Allow  commits
-  - [-] Allow squash merging
-  - [-] Allow rebase merging <br><br>
-
-
 ### Features
   [-] Wikis; *expect editing from within wiki; not version controlled*
   [+] Issues
@@ -90,7 +84,7 @@ We want to see the branch organization in the commit history.
   [-] Allow squash merging
   [-] Allow rebase merging (by definition, forces a single line of development with no branch organization)
 
-  [+] Always suggest updatinßg pull request branches
+  [+] Always suggest updating pull request branches
   [+] Automatically delete head branches.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*branches can still be restored* 
 
@@ -113,7 +107,7 @@ git push --set-upstream origin main
 
 
 - .gitignore
-  - do not ignore .gitignore
+  - do not gitignore .gitignore
     > !.gitignore
   - ignore folder .cebcar
     > .cebcar
