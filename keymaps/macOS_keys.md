@@ -2,5 +2,5 @@
 
 ## Shortcuts
 
- F4  Launchpad
+roL  Launchpad
 roD  Show/Hide Dock

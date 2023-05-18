@@ -105,19 +105,19 @@ git remote add origin git@github.com:cebcar/NAME.git
 git push --set-upstream origin main
 ```
 
+## Repo Settings
+*Settings Icon at right of project's menu bar*
+
+### > General
 
 - .gitignore
   - do not gitignore .gitignore
-    > !.gitignore
+    >!.gitignore
   - ignore folder .cebcar
     > .cebcar
   - [.gitignore](https://cebcar.w3spaces.com/TechDocs/tools/Git.md#gitignore): add content for macOS
 
 - .gitconfig
-TODO: correct configuration is to have exactly one of these at ~
-*required to connect to GitHub*
-```
-[user]
 	name = Carol Clark
 	email = 3742721+carolclark@users.noreply.github.com
 [init]
@@ -132,6 +132,46 @@ TODO: correct configuration is to have exactly one of these at ~
 	prompt = true
 ```
 
+### Features
+  [-] Wikis; *expect editing from within wiki*
+  [+] Issues
+  [-] Sponsorships
+  [-] Preserve this repository; *intended for long-term preservation of shared open-source code*
+  [o] Discussions; *depending on whether there are collaborators*
+  [+] Projects
+
+### Pull Requests
+#### Context:
+According to [W3Docs: How to rebase a git branch](https://www.w3docs.com/snippets/git/how-to-rebase-git-branch.html)
+> Merging preserves history whereas rebasing rewrites it.
+
+We want to see the branch organization in the commit history.
+
+#### Merge:
+  [+] Allow merge commits
+  [-] Allow squash merging
+  [-] Allow rebase merging (by definition, forces a single line of development with no branch organization
+
+  [+] Always suggest updating pull request branches
+  [+] Automatically delete head branches.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*branches can still be restored* 
+
+## > Branches
+Default Branch: main
+
+## Attach Local Repo
+
+create directory ~/NAME
+```shell
+cd ~/NAME
+git init
+cp ~/LICENSE ~/NAME/LICENSE # MIT license with updated copyright holder
+git add .
+git commit -m "initial commit"
+git branch -M main
+git remote add origin git@github.com:cebcar/NAME.git
+git push --set-upstream origin main
+```
 ## > Milestones
 
 ### access milestones

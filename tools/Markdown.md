@@ -29,6 +29,7 @@ generates
 - *indentation 2 for html, markdown*
   - HTML: Tab Size 2; Indent 2; Continuation Indent 4
   - Markdown: set from HTML
+
 ##### Inspections
 - Unresolved file references; Warning
 
