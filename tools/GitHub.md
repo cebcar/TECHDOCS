@@ -56,14 +56,13 @@ pbcopy < ~/.ssh/id_ed25519.pub
 - verify: additional known_host at ~/.ssh
 
 ### Create New Repository
-GitHub : ‘cebcar’ : New
+GitHub : ‘cebcar’ : New Repository
 - supply repo Name and Description
-- make repository “Public”<br><br>
+- make repository “Public”
+- add license, normally MIT <br><br>
 
 ## Repo Settings
 *Settings Icon at right of project's menu bar*
-
-### > General
 
 ### Features
   [-] Wikis; *expect editing from within wiki; not version controlled*
@@ -108,9 +107,30 @@ git push --set-upstream origin main
 
 ## Repo Settings
 *Settings Icon at right of project's menu bar*
-- [ ] establish Repo Settings
 
 ### > General
+
+- .gitignore
+  - do not gitignore .gitignore
+    >!.gitignore
+  - ignore folder .cebcar
+    > .cebcar
+  - [.gitignore](https://cebcar.w3spaces.com/TechDocs/tools/Git.md#gitignore): add content for macOS
+
+- .gitconfig
+	name = Carol Clark
+	email = 3742721+carolclark@users.noreply.github.com
+[init]
+	defaultBranch = main
+[diff]
+	tool = vimdiff
+[merge]
+	tool = vimdiff
+[pull]
+	rebase = false
+[difftool]
+	prompt = true
+```
 
 ### Features
   [-] Wikis; *expect editing from within wiki*
@@ -152,14 +172,6 @@ git branch -M main
 git remote add origin git@github.com:cebcar/NAME.git
 git push --set-upstream origin main
 ```
-
-## > .gitignore
-- do not ignore .gitignore
-  >!.gitignore
-- ignore folder .cebcar
-  > .cebcar
-- [.gitignore](https://cebcar.w3spaces.com/TechDocs/tools/Git.md#gitignore): add content for macOS
-
 ## > Milestones
 
 ### access milestones
@@ -168,7 +180,7 @@ git push --set-upstream origin main
 ### filter by milestone
 `milestone:`&lt;name&gt;
 
-##OAuth Tokens
+### OAuth Tokens
 *from [Access Tokens @ oauth.com](https://www.oauth.com/oauth2-servers/access-tokens/)*
 ``` text
 Access tokens are the thing that applications use to make API requests on behalf of a user.
@@ -176,6 +188,8 @@ The access token represents the authorization of a specific application to acces
 
 Access tokens must be kept confidential in transit and in storage.
 ```
+
+### OAuth Tokens for GitHub
 
 - GitHub Personal Access Tokens
   - type of OAuth token for GitHub
@@ -196,4 +210,31 @@ Access tokens must be kept confidential in transit and in storage.
     - set [Personal Access Token Permissions](#personal-access-token-permissions)
     - Generate New Token
 
-button onclick="window.print()">Print Button</button>
+### Tasks
+#### Access GitHub Repository Settings
+- from repo button bar: 'Settings'
+
+#### Access GitHub Developer Settings
+- from Developer avatar at top right of any GitHub screen: Settings > Developer settings
+
+### Issues
+- reference an issue from a commit without closing, ...: #issuenbr
+
+- Delete an Issue
+  - ***Warning***: the only reason we now know for deleting a GitHub issue is to remove an unwanted issue from a ZenHub Roadmap
+
+  - reference: [ZenHub: Deleting GitHub Issues or ZenHub Epics](https://help.zenhub.com/support/solutions/articles/43000480335-deleting-github-issues-or-zenhub-epics)
+
+  - from GitHub
+    - to enable/disable issue deletion:
+      - under personal icon at far top right
+        - select 'Your Organizations' and switch to cebcar account
+      - left sidebar: select Member Privileges
+      - toggle "Allow members to delete issues for this organization"
+    - so:
+      - enable issue deletion
+      - display the issue's screen
+      - select trashcan next to "Delete Issue", near bottom of left panel
+      - disable issue deletion
+
+<button onclick="window.print()">Print Button</button>
